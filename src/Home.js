@@ -4,7 +4,7 @@ import LogoDrive from './icon.png';
 import { FaPlus } from "react-icons/fa6";
 import { FaFolder } from "react-icons/fa";
 import { db, storage, auth } from './firebase';
-import { IoMdDownload, IoMdPhotos  } from "react-icons/io";
+import { IoMdDownload } from "react-icons/io";
 import { FaVideo } from "react-icons/fa6";
 
 
@@ -121,7 +121,7 @@ function Home(props){
                                     </a>
                                 </div>
                                 )
-                                }else if(data.tipo_arquivo == "image/png"){
+                                }else if(data.tipo_arquivo == "image/png" || data.tipo_arquivo == "image/jpeg" || data.tipo_arquivo == "image/svg"){
                                 return (
 
                                 <div className="boxFileSingle">
